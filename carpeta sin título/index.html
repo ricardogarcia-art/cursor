@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Limon.website — Diseño y desarrollo web minimalista</title>
+    <meta name="description" content="Limon.website: sitios web minimalistas y modernos con excelente performance y UX clara. Servicios, beneficios y contacto en una sola página." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Cursor personalizado -->
+    <div id="cursor"></div>
+
+    <header class="site-header container">
+      <a class="brand" href="#hero" aria-label="Limon.website">
+        <span class="brand__dot" aria-hidden="true">●</span>
+        Limon<span class="brand__accent">.website</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#beneficios">Beneficios</a>
+        <a href="#cta">CTA</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="hero container">
+        <div class="hero__content">
+          <h1 class="reveal">¿Tu negocio necesita una web? Nosotros la creamos por ti.</h1>
+          <p class="lead reveal">Olvídate de lo técnico, preocúpate por la imagen y las funciones.</p>
+          <div class="cta-group reveal">
+            <a class="btn btn--primary" id="cta-whatsapp" href="https://api.whatsapp.com/send?phone=TU_NUMERO_DE_TELEFONO" target="_blank" rel="noopener">
+              Hablar por WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
+          </div>
+        </div>
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="hero__orb"></div>
+          <div class="hero__orb hero__orb--sm"></div>
+        </div>
+      </section>
+
+      <!-- Servicios -->
+      <section id="servicios" class="section container">
+        <header class="section__head reveal">
+          <h2>Servicios</h2>
+          <p>Todo lo necesario para lanzar tu proyecto con una presencia impecable.</p>
+        </header>
+        <div class="grid">
+          <article class="card reveal">
+            <h3>Landing Pages</h3>
+            <p>Una página única y directa al objetivo: captar clientes y vender.</p>
+            <ul class="list">
+              <li>Diseño responsive</li>
+              <li>SEO base</li>
+              <li>Carga ultra rápida</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Apps</h3>
+            <p>Aplicaciones web ligeras y funcionales para automatizar tareas.</p>
+            <ul class="list">
+              <li>UI clara</li>
+              <li>Integraciones</li>
+              <li>Escalables</li>
+            </ul>
+          </article>
+          <article class="card reveal">
+            <h3>Herramientas</h3>
+            <p>Pequeñas utilidades web para tu equipo o tus clientes.</p>
+            <ul class="list">
+              <li>Formularios</li>
+              <li>Calculadoras</li>
+              <li>Micrositios</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Beneficios -->
+      <section id="beneficios" class="section section--alt container">
+        <header class="section__head reveal">
+          <h2>Beneficios</h2>
+          <p>Nos enfocamos en lo esencial: claridad, velocidad y conversión.</p>
+        </header>
+        <div class="grid grid--benefits">
+          <article class="benefit reveal">
+            <h3>Rápido y estable</h3>
+            <p>HTML, CSS y JS puros para máxima ligereza y menos fallos.</p>
+          </article>
+          <article class="benefit reveal">
+            <h3>Enfocado en resultados</h3>
+            <p>Diseño orientado a la acción: mensajes claros y CTAs visibles.</p>
+          </article>
+          <article class="benefit reveal">
+            <h3>Listo para publicar</h3>
+            <p>Arquitectura estática compatible con Vercel, Netlify y más.</p>
+          </article>
+          <article class="benefit reveal">
+            <h3>Escalable</h3>
+            <p>Base sólida para crecer con secciones o integraciones cuando quieras.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CTA dedicada -->
+      <section id="cta" class="section container">
+        <header class="section__head reveal">
+          <h2>¿Listo para empezar?</h2>
+          <p>Conversa por WhatsApp o envíanos el formulario y te respondemos en menos de 24h.</p>
+        </header>
+        <div class="cta-group reveal">
+          <a class="btn btn--primary" id="cta-whatsapp-2" href="https://api.whatsapp.com/send?phone=TU_NUMERO_DE_TELEFONO" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+          <a class="btn btn--ghost" href="#contacto">Escríbenos</a>
+        </div>
+      </section>
+
+      <!-- Contacto -->
+      <section id="contacto" class="section container">
+        <header class="section__head reveal">
+          <h2>Contacto</h2>
+          <p>Cuéntanos sobre tu proyecto. Respondemos en menos de 24 horas.</p>
+        </header>
+
+        <form id="contact-form" class="card form reveal" action="https://submit-form.com/TU_ENDPOINT_AQUI" method="POST" novalidate>
+          <div class="form__row">
+            <div class="form__field">
+              <label for="nombre">Nombre</label>
+              <input id="nombre" name="name" type="text" placeholder="Tu nombre" required />
+              <small class="field-hint">Requerido</small>
+            </div>
+            <div class="form__field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="tucorreo@dominio.com" required />
+              <small class="field-hint">Requerido</small>
+            </div>
+          </div>
+          <div class="form__field">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="message" rows="5" placeholder="¿En qué podemos ayudarte?" required></textarea>
+            <small class="field-hint">Requerido</small>
+          </div>
+
+          <!-- Redirección opcional soportada por algunos servicios -->
+          <input type="hidden" name="_redirect" value="./gracias.html" />
+
+          <div class="form__actions">
+            <button type="submit" class="btn btn--primary">Enviar</button>
+            <span id="form-status" role="status" aria-live="polite"></span>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer container">
+      <p class="brand">Limon<span class="brand__accent">.website</span></p>
+      <ul class="footer-links">
+        <li><a href="https://www.facebook.com/TU_NOMBRE_DE_USUARIO" target="_blank" rel="noopener">Facebook</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Privacidad</a></li>
+        <li><a href="#" target="_blank" rel="noopener">Términos</a></li>
+        <li><a href="mailto:hola@limon.website">hola@limon.website</a></li>
+      </ul>
+      <p class="copyright">© <span id="year"></span> Limon.website. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+  </html>
+
+
